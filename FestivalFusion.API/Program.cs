@@ -1,4 +1,6 @@
 using FestivalFusion.API.Data;
+using FestivalFusion.API.Repositories.Implementation;
+using FestivalFusion.API.Repositories.Interface;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,6 +16,8 @@ builder.Services.AddDbContext<FestivalContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("FestivalConnectionString"));
 });
+
+builder.Services.AddScoped<IFestivalRepository, FestivalRepository>();
 
 var app = builder.Build();
 

@@ -1,8 +1,7 @@
-﻿namespace FestivalFusion.API.Modals.Domain
+﻿namespace FestivalFusion.API.Models.DTO
 {
-    public class Festival
+    public class CreateFestivalRequestDto
     {
-        public int FestivalId { get; set; }
         public string FestivalName { get; set; }
         public string FestivalDescription { get; set; }
         public string Theme { get; set; }
