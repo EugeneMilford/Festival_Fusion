@@ -1,6 +1,7 @@
 ﻿using FestivalFusion.API.Data;
 using FestivalFusion.API.Modals.Domain;
 using FestivalFusion.API.Repositories.Interface;
+using Microsoft.EntityFrameworkCore;
 
 namespace FestivalFusion.API.Repositories.Implementation
 {
@@ -19,6 +20,44 @@ namespace FestivalFusion.API.Repositories.Implementation
             await dbContext.SaveChangesAsync();
 
             return festival;
+        }
+
+        public async Task<IEnumerable<Festival>> GetAllAsync()
+        {
+            return await dbContext.Festivals.ToListAsync();
+        }
+
+        public async Task<Festival?> GetById(int id)
+        {
+            return await dbContext.Festivals.FirstOrDefaultAsync(x => x.FestivalId == id);
+        }
+
+        public async Task<Festival?> UpdateAsync(Festival festival)
+        {
+            var existingCategory = await dbContext.Festivals.FirstOrDefaultAsync(x => x.FestivalId == festival.FestivalId);
+
+            if (existingCategory != null)
+            {
+                dbContext.Entry(existingCategory).CurrentValues.SetValues(festival);
+                await dbContext.SaveChangesAsync();
+                return festival;
+            }
+
+            return null;
+        }
+
+        public async Task<Festival?> DeleteAsync(int id)
+        {
+            var existingFestival = await dbContext.Festivals.FirstOrDefaultAsync(x => x.FestivalId == id);
+
+            if (existingFestival is null)
+            {
+                return null;
+            }
+
+            dbContext.Festivals.Remove(existingFestival);
+            await dbContext.SaveChangesAsync();
+            return existingFestival;
         }
     }
 }

@@ -1,38 +1,25 @@
-<header>
-    <div class="header-area ">
-        <div id="sticky-header" class="main-header-area">
-            <div class="container-fluid">
-                <div class="header_bottom_border">
-                    <div class="row align-items-center">
-                        <div class="col-xl-3 col-lg-2">
-                            <div class="logo">
-                                <a href="index.html">
-                                    <img src="img/logo.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-lg-7">
-                            <div class="main-menu  d-none d-lg-block">
-                                <nav>
-                                    <ul id="navigation">
-                                        <li><a [routerLink]="['/home']">Home</a></li>
-                                        <li><a [routerLink]="['/admin/festival']">Festival</a></li>
-                                        <li><a href="#">Artists</a></li>
-                                        <li><a href="#">Venue</a></li>
-                                        <li><a href="#">Sponsor</a></li>
-                                        <li><a href="#">Blogs</a></li>
-                                        <li><a href="#">Contact</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="mobile_menu d-block d-lg-none"></div>
-                        </div>
-                    </div>
-                </div>
+<header id="header" class="header fixed-top">
+    <div class="branding d-flex align-items-center">
 
-            </div>
-        </div>
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a [routerLink]="['/home']" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.webp" alt=""> -->
+          <h1 class="sitename">Festival Fusion</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a [routerLink]="['/home']">Home</a></li>
+            <li><a [routerLink]="['/admin/festival']">Festival</a></li>
+            <li><a href="#">Artists</a></li>
+            <li><a href="#">Venue</a></li>
+            <li><a href="#">Sponsor</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
     </div>
-</header>
+  </header>

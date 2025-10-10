@@ -1,0 +1,84 @@
+/* Fancy Festival Cards Styles */
+
+.text-gradient {
+    background: linear-gradient(90deg, #e96443, #904e95);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .bg-gradient-primary {
+    background: linear-gradient(90deg,#1e3c72,#2a5298);
+    color: #fff !important;
+  }
+  
+  .festival-card {
+    transition: 0.3s;
+    border-radius: 1.25rem;
+    background: linear-gradient(135deg, #f7f7fa 60%, #f3e7e9 100%);
+    box-shadow: 0 2px 14px rgba(80, 90, 120, 0.09);
+  }
+  
+  .festival-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 8px 32px rgba(80, 90, 120, 0.13);
+  }
+  
+  .card-img-top {
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+  }
+  
+  .badge.bg-gradient-primary {
+    background: linear-gradient(90deg,#1e3c72,#2a5298);
+    color: #fff !important;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.03em;
+  }
+  
+  .btn-primary, .btn-outline-primary, .btn-outline-secondary {
+    box-shadow: 0 2px 8px rgba(100,80,130,0.10);
+  }
+  
+  .btn-primary {
+    background: linear-gradient(90deg, #e96443, #904e95);
+    border: none;
+  }
+  
+  .btn-outline-primary {
+    border-color: #904e95;
+    color: #904e95;
+  }
+  
+  .btn-outline-secondary {
+    border-color: #e96443;
+    color: #e96443;
+  }
+  
+  .btn-outline-primary:hover, .btn-outline-secondary:hover {
+    background: linear-gradient(90deg, #e96443, #904e95);
+    color: #fff;
+    border: none;
+  }
+  
+  .fw-bold {
+    font-weight: 700 !important;
+  }
+  
+  .display-4 {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  
+  .rounded-pill {
+    border-radius: 50rem !important;
+  }
+  
+  .rounded-4, .card-img-top.rounded-top-4 {
+    border-radius: 1.25rem !important;
+  }
+  
+  .shadow-lg {
+    box-shadow: 0 8px 32px rgba(80, 90, 120, 0.13) !important;
+  }

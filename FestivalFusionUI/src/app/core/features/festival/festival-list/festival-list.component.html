@@ -1,10 +1,90 @@
 <div class="container">
 
-    <h1 class="mt-3">List of Festivals</h1>
+  <!-- Breadcrumb for Festivals -->
+  <nav aria-label="breadcrumb" class="mt-3">
+    <ol class="breadcrumb bg-white px-3 py-2 rounded-3 shadow-sm">
+      <li class="breadcrumb-item">
+        <a routerLink="/" class="text-decoration-none fw-bold">
+          <i class="bi bi-house-door"></i> Home
+        </a>
+      </li>
+      <li class="breadcrumb-item active fw-bold text-dark" aria-current="page">
+        Festivals
+      </li>
+    </ol>
+  </nav>
+  <!-- End Breadcrumb -->
 
-    <div class="d-flex justify-content-end mt-3">
-        <a href="" class="btn btn-primary">Add new Festival</a>
+  <h1 class="mt-3">List of Festivals</h1>
+
+  <div class="d-flex justify-content-end mt-3">
+    <a [routerLink]="['/admin/festival/add']" class="btn btn-primary">Add new Festival</a>
+  </div>
+
+  <br>
+
+  <ng-container *ngIf="festivals$ | async as festivals">
+    <div class="row">
+      <div class="col-xs-12 col-md-6 col-lg-4" *ngFor="let festival of festivals">
+        <div class="card mb-4" style="min-height: 350px;">
+          <div class="card-body">
+            <h5 class="card-title">{{festival.festivalName}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{festival.theme}}</h6>
+            <p class="card-text">
+              {{festival.festivalDescription}}
+            </p>
+            <ul class="list-unstyled small mb-3">
+              <li>
+                <strong>Start:</strong>
+              </li>
+              <p>{{festival.startDate}}</p>
+              <li>
+                <strong>End:</strong>
+                {{festival.endDate}}
+              </li>
+              <li>
+                  <strong>Theme:</strong>
+                  {{festival.theme}}
+                </li>
+              <li>
+                <strong>Sponsor:</strong>
+                {{festival.sponsor}}
+              </li>
+            </ul>
+            <a class="btn btn-sm btn-outline-primary"
+                 [routerLink]="['/admin/festival', festival.festivalId]">
+                Edit
+            </a>
+            <a class="btn btn-sm btn-outline-secondary" href="#">
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
+  </ng-container>
 
 </div>
+
+  
+  <!--
+  For extra fancy styles, you can add these custom CSS styles:
+  
+  <style>
+  .text-gradient {
+    background: linear-gradient(90deg, #e96443, #904e95);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .bg-gradient-primary {
+    background: linear-gradient(90deg,#1e3c72,#2a5298);
+    color: #fff !important;
+  }
+  .festival-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 8px 32px rgba(80, 90, 120, 0.13);
+    transition: 0.3s;
+  }
+  </style>
+  -->
 
