@@ -1,0 +1,77 @@
+<div class="container">
+  <h3 class="mt-3 mb-4 text-center text-gradient">Add Artist</h3>
+  <div class="col-lg-8 mx-auto">
+    <form #form="ngForm" (ngSubmit)="onArtistSubmit()" class="p-4 rounded-4 shadow-lg bg-white">
+      <div class="row gy-4">
+
+        <div class="col-md-6">
+          <div class="form-floating">
+            <input type="text" 
+                   name="Name" 
+                   class="form-control" 
+                   placeholder="Name" 
+                   required 
+                   [(ngModel)]="model.name">
+            <label for="Name">Name</label>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="form-floating">
+            <input type="text" 
+                   name="Genre" 
+                   class="form-control" 
+                   placeholder="Genre" 
+                   required 
+                   [(ngModel)]="model.genre">
+            <label for="Genre">Genre</label>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="form-floating">
+            <input type="text" 
+                   name="Country" 
+                   class="form-control" 
+                   placeholder="Country" 
+                   required 
+                   [(ngModel)]="model.country">
+            <label for="Country">Country</label>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="form-floating">
+            <input type="text" 
+                   name="Bio" 
+                   class="form-control" 
+                   placeholder="Bio" 
+                   required 
+                   [(ngModel)]="model.bio">
+            <label for="Bio">Bio</label>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="form-floating">
+            <input type="text" 
+                   name="ArtistImageUrl" 
+                   class="form-control" 
+                   placeholder="Artist Image URL" 
+                   required 
+                   [(ngModel)]="model.artistImageUrl">
+            <label for="ArtistImageUrl">Artist Image URL</label>
+          </div>
+        </div>
+
+        <div class="col-12 text-center mt-4">
+          <button type="submit" class="btn btn-primary btn-lg px-5 rounded-pill shadow">Add Artist</button>
+        </div>
+
+      </div>
+    </form>
+  </div>
+</div>
+
+
+

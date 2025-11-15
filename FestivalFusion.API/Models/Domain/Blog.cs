@@ -8,7 +8,7 @@
         public string Content { get; set; }
         public string Category { get; set; }
         public string FeaturedImageUrl { get; set; } 
-        public string Author { get; set; } = string.Empty;
+        public string Author { get; set; } 
         public DateTime PublishedDate { get; set; }
         public DateTime? UpdatedDate { get; set; }
         public bool IsPublished { get; set; }

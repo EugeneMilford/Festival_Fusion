@@ -22,6 +22,7 @@ export class AddFestivalComponent implements OnDestroy {
     private router: Router){
     this.model = {
       festivalName: '',
+      festivalImageUrl: '',
       festivalDescription: '',
       theme: '',
       startDate: '',

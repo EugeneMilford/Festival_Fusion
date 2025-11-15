@@ -47,6 +47,7 @@ export class EditFestivalComponent implements OnInit, OnDestroy{
   onFormSubmit(): void {
     const updateFestivalRequest: UpdateFestivalRequest = {
       festivalName: this.festival?.festivalName ?? '',
+      festivalImageUrl: this.festival?.festivalImageUrl ?? '',
       festivalDescription: this.festival?.festivalDescription ?? '',
       theme: this.festival?.theme ?? '',
       startDate: this.festival?.startDate ?? '',

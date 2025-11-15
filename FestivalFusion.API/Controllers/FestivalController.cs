@@ -26,6 +26,7 @@ namespace FestivalFusion.API.Controllers
             var festival = new Festival
             {
                 FestivalName = request.FestivalName,
+                FestivalImageUrl = request.FestivalImageUrl,
                 FestivalDescription = request.FestivalDescription,
                 Theme = request.Theme,
                 StartDate = request.StartDate,
@@ -41,6 +42,7 @@ namespace FestivalFusion.API.Controllers
             {
                 FestivalId = festival.FestivalId,
                 FestivalName = festival.FestivalName,
+                FestivalImageUrl = festival.FestivalImageUrl,
                 Theme = festival.Theme,
                 StartDate = festival.StartDate,
                 EndDate = festival.EndDate,
@@ -64,6 +66,7 @@ namespace FestivalFusion.API.Controllers
                 {
                     FestivalId = festival.FestivalId,
                     FestivalName = festival.FestivalName,
+                    FestivalImageUrl = festival.FestivalImageUrl,
                     FestivalDescription = festival.FestivalDescription,
                     Theme = festival.Theme,
                     StartDate = festival.StartDate,
@@ -92,6 +95,7 @@ namespace FestivalFusion.API.Controllers
             {
                 FestivalId = existingFestival.FestivalId,
                 FestivalName = existingFestival.FestivalName,
+                FestivalImageUrl = existingFestival.FestivalImageUrl,
                 FestivalDescription = existingFestival.FestivalDescription,
                 Theme = existingFestival.Theme,
                 StartDate = existingFestival.StartDate,
@@ -111,6 +115,7 @@ namespace FestivalFusion.API.Controllers
             {
                 FestivalId = id,
                 FestivalName = request.FestivalName,
+                FestivalImageUrl = request.FestivalImageUrl,
                 FestivalDescription = request.FestivalDescription,
                 Theme = request.Theme,
                 StartDate = request.StartDate,
@@ -130,6 +135,7 @@ namespace FestivalFusion.API.Controllers
             {
                 FestivalId = id,
                 FestivalName = festival.FestivalName,
+                FestivalImageUrl = festival.FestivalImageUrl,
                 FestivalDescription = festival.FestivalDescription,
                 Theme = festival.Theme,
                 StartDate = festival.StartDate,
@@ -156,6 +162,7 @@ namespace FestivalFusion.API.Controllers
             {
                 FestivalId = festival.FestivalId,
                 FestivalName = festival.FestivalName,
+                FestivalImageUrl = festival.FestivalImageUrl,
                 FestivalDescription = festival.FestivalDescription,
                 Theme = festival.Theme,
                 StartDate = festival.StartDate,

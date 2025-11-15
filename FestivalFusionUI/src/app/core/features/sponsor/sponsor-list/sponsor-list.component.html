@@ -1,0 +1,125 @@
+<div class="container">
+
+  <!-- Breadcrumb for Sponsors -->
+  <nav aria-label="breadcrumb" class="mt-3">
+    <ol class="breadcrumb bg-white px-3 py-2 rounded-3 shadow-sm">
+      <li class="breadcrumb-item">
+        <a [routerLink]="['/home']" class="text-decoration-none fw-bold">
+          <i class="bi bi-house-door"></i> Home
+        </a>
+      </li>
+      <li class="breadcrumb-item active fw-bold text-dark" aria-current="page">
+        Sponsors
+      </li>
+    </ol>
+  </nav>
+  <!-- End Breadcrumb -->
+
+  <h1 class="mt-3">List of Sponsors</h1>
+
+  <div class="d-flex justify-content-end mt-3">
+    <a [routerLink]="['/admin/sponsor/add']" class="btn btn-primary">Add New Sponsor</a>
+  </div>
+
+  <br>
+
+  <ng-container *ngIf="sponsors$ | async as sponsors">
+    <div class="row">
+      <div class="col-xs-12 col-md-6 col-lg-4" *ngFor="let sponsor of sponsors">
+        <div class="card mb-4" style="min-height: 350px;">
+          <div class="card-body">
+            <h5 class="card-title">{{sponsor.name}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Email: {{sponsor.contactEmail}}</h6>
+            <h6 class="card-subtitle mb-2 text-muted">Phone: {{sponsor.phone}}</h6>
+            <p class="card-text">
+              <a *ngIf="sponsor.website" [href]="sponsor.website" target="_blank" rel="noopener" class="text-primary text-decoration-underline">
+                Visit Website
+              </a>
+            </p>
+            <a class="btn btn-sm btn-outline-primary"
+               [routerLink]="['/admin/sponsor', sponsor.sponsorId]">
+              Edit
+            </a>
+            <button 
+              class="btn btn-sm btn-outline-secondary" 
+              (click)="openSponsorModal(sponsor)">
+              Read More
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+
+</div>
+
+<!-- Sponsor Modal -->
+<div class="modal fade" 
+     id="sponsorModal" 
+     tabindex="-1" 
+     aria-labelledby="sponsorModalLabel" 
+     aria-hidden="true"
+     *ngIf="selectedSponsor">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="sponsorModalLabel">{{selectedSponsor.name}}</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Sponsor Meta Info -->
+        <div class="sponsor-meta mb-4">
+          <div class="d-flex flex-wrap gap-3 mb-3">
+            <span class="badge bg-primary">
+              <i class="bi bi-building"></i> Sponsor
+            </span>
+          </div>
+        </div>
+
+        <!-- Sponsor Details -->
+        <div class="sponsor-content">
+          <h5 class="mb-3">Contact Information</h5>
+          <div class="row g-3">
+            <div class="col-md-12">
+              <p class="mb-2"><strong><i class="bi bi-building"></i> Organization Name:</strong></p>
+              <p class="ms-3 text-muted">{{selectedSponsor.name}}</p>
+            </div>
+            <div class="col-md-6">
+              <p class="mb-2"><strong><i class="bi bi-envelope"></i> Email:</strong></p>
+              <p class="ms-3">
+                <a [href]="'mailto:' + selectedSponsor.contactEmail" class="text-decoration-none">
+                  {{selectedSponsor.contactEmail}}
+                </a>
+              </p>
+            </div>
+            <div class="col-md-6">
+              <p class="mb-2"><strong><i class="bi bi-telephone"></i> Phone:</strong></p>
+              <p class="ms-3">
+                <a [href]="'tel:' + selectedSponsor.phone" class="text-decoration-none">
+                  {{selectedSponsor.phone}}
+                </a>
+              </p>
+            </div>
+            <div class="col-md-12" *ngIf="selectedSponsor.website">
+              <p class="mb-2"><strong><i class="bi bi-globe"></i> Website:</strong></p>
+              <p class="ms-3">
+                <a [href]="selectedSponsor.website" target="_blank" rel="noopener" class="text-decoration-none">
+                  {{selectedSponsor.website}} <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a [routerLink]="['/admin/sponsor', selectedSponsor.sponsorId]" 
+           class="btn btn-primary" 
+           data-bs-dismiss="modal">
+          <i class="bi bi-pencil"></i> Edit Sponsor
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+

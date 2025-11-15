@@ -3,7 +3,6 @@
 
       <div class="container position-relative d-flex align-items-center justify-content-between">
         <a [routerLink]="['/home']" class="logo d-flex align-items-center">
-          <!-- Uncomment the line below if you also wish to use an image logo -->
           <!-- <img src="assets/img/logo.webp" alt=""> -->
           <h1 class="sitename">Festival Fusion</h1>
         </a>
@@ -12,11 +11,11 @@
           <ul>
             <li><a [routerLink]="['/home']">Home</a></li>
             <li><a [routerLink]="['/admin/festival']">Festival</a></li>
-            <li><a href="#">Artists</a></li>
-            <li><a href="#">Venue</a></li>
-            <li><a href="#">Sponsor</a></li>
-            <li><a href="#">Blogs</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a [routerLink]="['/admin/artist']">Artists</a></li>
+            <li><a [routerLink]="['/admin/venue']">Venues</a></li>
+            <li><a [routerLink]="['/admin/sponsor']">Sponsors</a></li>
+            <li><a [routerLink]="['/admin/blog']">Blogs</a></li>
+            <li><a [routerLink]="['/admin/contact']">Contact Us</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>

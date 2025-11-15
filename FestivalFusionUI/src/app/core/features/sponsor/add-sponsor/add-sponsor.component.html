@@ -1,0 +1,90 @@
+<div class="container">
+  <!-- Breadcrumb for Sponsors -->
+  <nav aria-label="breadcrumb" class="mt-3">
+    <ol class="breadcrumb bg-white px-3 py-2 rounded-3 shadow-sm">
+      <li class="breadcrumb-item">
+        <a routerLink="/" class="text-decoration-none fw-bold">
+          <i class="bi bi-house-door"></i> Home
+        </a>
+      </li>
+      <li class="breadcrumb-item">
+        <a routerLink="/admin/sponsor" class="text-decoration-none fw-bold">
+          <i class="bi bi-briefcase"></i> Sponsors
+        </a>
+      </li>
+      <li class="breadcrumb-item active fw-bold text-dark" aria-current="page">
+        Add Sponsor
+      </li>
+    </ol>
+  </nav>
+  <!-- End Breadcrumb -->
+
+  <h3 class="mt-4 mb-4 text-center text-gradient">Add Sponsor</h3>
+
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <form #form="ngForm" (ngSubmit)="onSponsorSubmit()" class="p-4 rounded-4 shadow-lg bg-white">
+        <div class="row gy-4">
+
+          <div class="col-md-6">
+            <label for="name">Sponsor Name</label>
+            <div class="form-floating">
+              <input
+                type="text"
+                id="name"
+                name="Name"
+                class="form-control"
+                placeholder="Name"
+                required
+                [(ngModel)]="model.Name">
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="contactEmail">Contact Email</label>
+            <div class="form-floating">
+              <input
+                type="email"
+                id="contactEmail"
+                name="ContactEmail"
+                class="form-control"
+                placeholder="Contact Email"
+                required
+                [(ngModel)]="model.ContactEmail">
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="phone">Phone Number</label>
+            <div class="form-floating">
+              <input
+                type="tel"
+                id="phone"
+                name="Phone"
+                class="form-control"
+                placeholder="Phone"
+                [(ngModel)]="model.Phone">
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="website">Website</label>
+            <div class="form-floating">
+              <input
+                type="url"
+                id="website"
+                name="Website"
+                class="form-control"
+                placeholder="https://example.com"
+                [(ngModel)]="model.Website">
+            </div>
+          </div>
+
+          <div class="col-md-12 text-center mt-4">
+            <button type="submit" class="btn btn-primary btn-lg px-5 rounded-pill shadow">Add Sponsor</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,149 @@
+/* Edit Sponsor Container */
+.container {
+    padding: 40px 15px 80px;
+    max-width: 900px;
+  }
+  
+  /* Page Title */
+  h3 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1f2937;
+    margin-bottom: 40px;
+    padding-bottom: 16px;
+    border-bottom: 3px solid #7c3aed;
+    background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+  }
+  
+  /* Partnership Icon */
+  h3::before {
+    content: '🤝';
+    display: inline-block;
+    margin-right: 12px;
+    font-size: 1.8rem;
+    animation: handshake 2s ease-in-out infinite;
+  }
+  
+  @keyframes handshake {
+    0%, 100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(-10deg);
+    }
+    75% {
+      transform: rotate(10deg);
+    }
+  }
+  
+  /* Form Styling */
+  form {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e5e7eb;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Gradient Top Border */
+  form::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #7c3aed 0%, #10b981 100%);
+  }
+  
+  /* Decorative Business Icon */
+  form::after {
+    content: '💼';
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    font-size: 3rem;
+    color: rgba(124, 58, 237, 0.05);
+    pointer-events: none;
+  }
+  
+  .row.gy-4 {
+    row-gap: 24px !important;
+  }
+  
+  /* Form Labels */
+  .form-label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    letter-spacing: 0.3px;
+  }
+  
+  /* Label Icons */
+  label[for="sponsorId"]::before {
+    content: '🔢';
+    font-size: 1rem;
+  }
+  
+  label[for="Name"]::before {
+    content: '🏢';
+    font-size: 1rem;
+  }
+  
+  label[for="ContactEmail"]::before {
+    content: '📧';
+    font-size: 1rem;
+  }
+  
+  label[for="Phone"]::before {
+    content: '📱';
+    font-size: 1rem;
+  }
+  
+  label[for="Website"]::before {
+    content: '🌐';
+    font-size: 1rem;
+  }
+  
+  /* Form Controls */
+  .form-control {
+    padding: 12px 16px;
+    font-size: 0.95rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background: #ffffff;
+    color: #1f2937;
+  }
+  
+  .form-control:focus {
+    border-color: #7c3aed;
+    box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.1);
+    outline: none;
+    background: #ffffff;
+  }
+  
+  .form-control:hover:not(:focus):not(:disabled):not([readonly]) {
+    border-color: #c4b5fd;
+    background: #faf9fc;
+  }
+  
+  .form-control::placeholder {
+    color: #9ca3af;
+  }
+  
+  /* Read-only Input */
+  .form-control[readonly] {
+    background: #f9fafb;
+    color: #6b7280;
+    cursor: n

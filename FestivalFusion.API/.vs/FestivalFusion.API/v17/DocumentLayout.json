@@ -3,76 +3,172 @@
   "WorkspaceRootPath": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\controllers\\festivalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:controllers\\festivalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\repositories\\implementation\\festivalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:repositories\\implementation\\festivalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\repositories\\interface\\ifestivalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:repositories\\interface\\ifestivalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\models\\dto\\updatefestivalrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:models\\dto\\updatefestivalrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\controllers\\artistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:controllers\\artistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\models\\domain\\blog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:models\\domain\\blog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\models\\domain\\sponsor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:models\\domain\\sponsor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\models\\domain\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:models\\domain\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\models\\domain\\artist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:models\\domain\\artist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\migrations\\20250903175144_blogsadded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:migrations\\20250903175144_blogsadded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\data\\festivalcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:data\\festivalcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\models\\dto\\createfestivalrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:models\\dto\\createfestivalrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\models\\dto\\festivaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:models\\dto\\festivaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\models\\domain\\festival.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:models\\domain\\festival.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\controllers\\sponsorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:controllers\\sponsorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\models\\domain\\venue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:models\\domain\\venue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\models\\dto\\addartistrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:models\\dto\\addartistrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\models\\dto\\updateartistrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:models\\dto\\updateartistrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\models\\dto\\festivaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:models\\dto\\festivaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\models\\dto\\updatefestivalrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:models\\dto\\updatefestivalrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\controllers\\festivalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:controllers\\festivalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\models\\dto\\createfestivalrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:models\\dto\\createfestivalrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\controllers\\blogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:controllers\\blogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\data\\festivalcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:data\\festivalcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\repositories\\implementation\\blogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:repositories\\implementation\\blogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\repositories\\implementation\\artistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:repositories\\implementation\\artistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\repositories\\implementation\\festivalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:repositories\\implementation\\festivalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\models\\dto\\blogdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:models\\dto\\blogdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\models\\domain\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:models\\domain\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\models\\domain\\venue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:models\\domain\\venue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\repositories\\interface\\iblogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:repositories\\interface\\iblogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\repositories\\interface\\iartistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:repositories\\interface\\iartistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\models\\dto\\updateblogrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:models\\dto\\updateblogrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\models\\dto\\addblogrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:models\\dto\\addblogrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\models\\dto\\addcontactrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:models\\dto\\addcontactrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\models\\domain\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:models\\domain\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\repositories\\implementation\\contactrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:repositories\\implementation\\contactrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\repositories\\interface\\icontactrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:repositories\\interface\\icontactrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\repositories\\interface\\isponsorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:repositories\\interface\\isponsorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\repositories\\interface\\ivenuerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:repositories\\interface\\ivenuerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\models\\dto\\contactdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:models\\dto\\contactdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\models\\dto\\sponsordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:models\\dto\\sponsordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\repositories\\implementation\\sponsorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:repositories\\implementation\\sponsorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\repositories\\implementation\\venuerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:repositories\\implementation\\venuerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\models\\dto\\updatesponsorrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:models\\dto\\updatesponsorrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\models\\domain\\sponsor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:models\\domain\\sponsor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\repositories\\interface\\ifestivalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:repositories\\interface\\ifestivalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\models\\dto\\addsponsorrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:models\\dto\\addsponsorrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\migrations\\20250903175144_blogsadded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:migrations\\20250903175144_blogsadded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|d:\\projects\\festivalfusion\\festivalfusion.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}|FestivalFusion.API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -82,27 +178,348 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 7,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "BlogDto.cs",
+              "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\DTO\\BlogDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTO\\BlogDto.cs",
+              "ToolTip": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\DTO\\BlogDto.cs",
+              "RelativeToolTip": "Models\\DTO\\BlogDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T19:42:51.436Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 27,
+              "Title": "ContactRepository.cs",
+              "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Repositories\\Implementation\\ContactRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Implementation\\ContactRepository.cs",
+              "ToolTip": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Repositories\\Implementation\\ContactRepository.cs",
+              "RelativeToolTip": "Repositories\\Implementation\\ContactRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T14:54:39.305Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Artist.cs",
+              "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\Domain\\Artist.cs",
+              "RelativeDocumentMoniker": "Models\\Domain\\Artist.cs",
+              "ToolTip": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\Domain\\Artist.cs",
+              "RelativeToolTip": "Models\\Domain\\Artist.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-13T13:25:04.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IBlogRepository.cs",
+              "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Repositories\\Interface\\IBlogRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interface\\IBlogRepository.cs",
+              "ToolTip": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Repositories\\Interface\\IBlogRepository.cs",
+              "RelativeToolTip": "Repositories\\Interface\\IBlogRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T19:45:31.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "IContactRepository.cs",
+              "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Repositories\\Interface\\IContactRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interface\\IContactRepository.cs",
+              "ToolTip": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Repositories\\Interface\\IContactRepository.cs",
+              "RelativeToolTip": "Repositories\\Interface\\IContactRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T14:51:19.343Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Blog.cs",
+              "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\Domain\\Blog.cs",
+              "RelativeDocumentMoniker": "Models\\Domain\\Blog.cs",
+              "ToolTip": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\Domain\\Blog.cs",
+              "RelativeToolTip": "Models\\Domain\\Blog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T17:43:54.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AddBlogRequestDto.cs",
+              "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\DTO\\AddBlogRequestDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTO\\AddBlogRequestDto.cs",
+              "ToolTip": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\DTO\\AddBlogRequestDto.cs",
+              "RelativeToolTip": "Models\\DTO\\AddBlogRequestDto.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T19:43:58.847Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ArtistController.cs",
+              "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Controllers\\ArtistController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ArtistController.cs",
+              "ToolTip": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Controllers\\ArtistController.cs",
+              "RelativeToolTip": "Controllers\\ArtistController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJoAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T11:32:22.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UpdateBlogRequestDto.cs",
+              "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\DTO\\UpdateBlogRequestDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTO\\UpdateBlogRequestDto.cs",
+              "ToolTip": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\DTO\\UpdateBlogRequestDto.cs",
+              "RelativeToolTip": "Models\\DTO\\UpdateBlogRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T19:44:46.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BlogRepository.cs",
+              "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Repositories\\Implementation\\BlogRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Implementation\\BlogRepository.cs",
+              "ToolTip": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Repositories\\Implementation\\BlogRepository.cs",
+              "RelativeToolTip": "Repositories\\Implementation\\BlogRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T19:57:52.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "BlogsController.cs",
+              "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Controllers\\BlogsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BlogsController.cs",
+              "ToolTip": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Controllers\\BlogsController.cs",
+              "RelativeToolTip": "Controllers\\BlogsController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAIwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T20:01:44.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Venue.cs",
+              "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\Domain\\Venue.cs",
+              "RelativeDocumentMoniker": "Models\\Domain\\Venue.cs",
+              "ToolTip": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\Domain\\Venue.cs",
+              "RelativeToolTip": "Models\\Domain\\Venue.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T12:18:46.234Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AddContactRequestDto.cs",
+              "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\DTO\\AddContactRequestDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTO\\AddContactRequestDto.cs",
+              "ToolTip": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\DTO\\AddContactRequestDto.cs",
+              "RelativeToolTip": "Models\\DTO\\AddContactRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T14:50:43.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ContactDto.cs",
+              "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\DTO\\ContactDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTO\\ContactDto.cs",
+              "ToolTip": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\DTO\\ContactDto.cs",
+              "RelativeToolTip": "Models\\DTO\\ContactDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T14:50:15.206Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "UpdateSponsorRequestDto.cs",
+              "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\DTO\\UpdateSponsorRequestDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTO\\UpdateSponsorRequestDto.cs",
+              "ToolTip": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\DTO\\UpdateSponsorRequestDto.cs",
+              "RelativeToolTip": "Models\\DTO\\UpdateSponsorRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T20:52:20.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UpdateArtistRequestDto.cs",
+              "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\DTO\\UpdateArtistRequestDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTO\\UpdateArtistRequestDto.cs",
+              "ToolTip": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\DTO\\UpdateArtistRequestDto.cs",
+              "RelativeToolTip": "Models\\DTO\\UpdateArtistRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T20:46:15.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "SponsorDto.cs",
+              "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\DTO\\SponsorDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTO\\SponsorDto.cs",
+              "ToolTip": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\DTO\\SponsorDto.cs",
+              "RelativeToolTip": "Models\\DTO\\SponsorDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T18:12:07.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "SponsorRepository.cs",
+              "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Repositories\\Implementation\\SponsorRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Implementation\\SponsorRepository.cs",
+              "ToolTip": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Repositories\\Implementation\\SponsorRepository.cs",
+              "RelativeToolTip": "Repositories\\Implementation\\SponsorRepository.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T17:40:23.856Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "VenueRepository.cs",
+              "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Repositories\\Implementation\\VenueRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Implementation\\VenueRepository.cs",
+              "ToolTip": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Repositories\\Implementation\\VenueRepository.cs",
+              "RelativeToolTip": "Repositories\\Implementation\\VenueRepository.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAQwDAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T17:39:06.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ArtistRepository.cs",
+              "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Repositories\\Implementation\\ArtistRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Implementation\\ArtistRepository.cs",
+              "ToolTip": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Repositories\\Implementation\\ArtistRepository.cs",
+              "RelativeToolTip": "Repositories\\Implementation\\ArtistRepository.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAowAkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T17:38:37.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ISponsorRepository.cs",
+              "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Repositories\\Interface\\ISponsorRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interface\\ISponsorRepository.cs",
+              "ToolTip": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Repositories\\Interface\\ISponsorRepository.cs",
+              "RelativeToolTip": "Repositories\\Interface\\ISponsorRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T17:36:44.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "IVenueRepository.cs",
+              "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Repositories\\Interface\\IVenueRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interface\\IVenueRepository.cs",
+              "ToolTip": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Repositories\\Interface\\IVenueRepository.cs",
+              "RelativeToolTip": "Repositories\\Interface\\IVenueRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T17:35:59.088Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IArtistRepository.cs",
+              "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Repositories\\Interface\\IArtistRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interface\\IArtistRepository.cs",
+              "ToolTip": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Repositories\\Interface\\IArtistRepository.cs",
+              "RelativeToolTip": "Repositories\\Interface\\IArtistRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T17:35:45.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "AddSponsorRequestDto.cs",
+              "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\DTO\\AddSponsorRequestDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTO\\AddSponsorRequestDto.cs",
+              "ToolTip": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\DTO\\AddSponsorRequestDto.cs",
+              "RelativeToolTip": "Models\\DTO\\AddSponsorRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T14:28:08.016Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ContactController.cs",
+              "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Controllers\\ContactController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ContactController.cs",
+              "ToolTip": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Controllers\\ContactController.cs",
+              "RelativeToolTip": "Controllers\\ContactController.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAgwEgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T14:25:10.027Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SponsorController.cs",
+              "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Controllers\\SponsorController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SponsorController.cs",
+              "ToolTip": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Controllers\\SponsorController.cs",
+              "RelativeToolTip": "Controllers\\SponsorController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T13:51:41.037Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AddArtistRequestDto.cs",
+              "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\DTO\\AddArtistRequestDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTO\\AddArtistRequestDto.cs",
+              "ToolTip": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\DTO\\AddArtistRequestDto.cs",
+              "RelativeToolTip": "Models\\DTO\\AddArtistRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T11:40:05.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "UpdateFestivalRequestDto.cs",
               "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\DTO\\UpdateFestivalRequestDto.cs",
               "RelativeDocumentMoniker": "Models\\DTO\\UpdateFestivalRequestDto.cs",
               "ToolTip": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\DTO\\UpdateFestivalRequestDto.cs",
               "RelativeToolTip": "Models\\DTO\\UpdateFestivalRequestDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-08T20:25:07.601Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 40,
               "Title": "20250903175144_BlogsAdded.cs",
               "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Migrations\\20250903175144_BlogsAdded.cs",
               "RelativeDocumentMoniker": "Migrations\\20250903175144_BlogsAdded.cs",
@@ -114,31 +531,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Blog.cs",
-              "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\Domain\\Blog.cs",
-              "RelativeDocumentMoniker": "Models\\Domain\\Blog.cs",
-              "ToolTip": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\Domain\\Blog.cs",
-              "RelativeToolTip": "Models\\Domain\\Blog.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T17:43:54.758Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 25,
               "Title": "Contact.cs",
               "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\Domain\\Contact.cs",
               "RelativeDocumentMoniker": "Models\\Domain\\Contact.cs",
               "ToolTip": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\Domain\\Contact.cs",
               "RelativeToolTip": "Models\\Domain\\Contact.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-03T17:38:48.456Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 36,
               "Title": "Sponsor.cs",
               "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\Domain\\Sponsor.cs",
               "RelativeDocumentMoniker": "Models\\Domain\\Sponsor.cs",
@@ -150,7 +555,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 39,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
@@ -162,7 +567,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 37,
               "Title": "IFestivalRepository.cs",
               "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Repositories\\Interface\\IFestivalRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\Interface\\IFestivalRepository.cs",
@@ -170,74 +575,71 @@
               "RelativeToolTip": "Repositories\\Interface\\IFestivalRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T14:29:22.814Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-13T14:29:22.814Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 17,
               "Title": "FestivalRepository.cs",
               "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Repositories\\Implementation\\FestivalRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\Implementation\\FestivalRepository.cs",
               "ToolTip": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Repositories\\Implementation\\FestivalRepository.cs",
               "RelativeToolTip": "Repositories\\Implementation\\FestivalRepository.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAmwD0AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAowDwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T14:18:59.635Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-13T14:18:59.635Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 8,
               "Title": "FestivalDto.cs",
               "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\DTO\\FestivalDto.cs",
               "RelativeDocumentMoniker": "Models\\DTO\\FestivalDto.cs",
               "ToolTip": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\DTO\\FestivalDto.cs",
               "RelativeToolTip": "Models\\DTO\\FestivalDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-13T14:04:11.816Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "CreateFestivalRequestDto.cs",
               "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\DTO\\CreateFestivalRequestDto.cs",
               "RelativeDocumentMoniker": "Models\\DTO\\CreateFestivalRequestDto.cs",
               "ToolTip": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\DTO\\CreateFestivalRequestDto.cs",
               "RelativeToolTip": "Models\\DTO\\CreateFestivalRequestDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-13T14:03:08.508Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 10,
               "Title": "FestivalController.cs",
               "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Controllers\\FestivalController.cs",
               "RelativeDocumentMoniker": "Controllers\\FestivalController.cs",
               "ToolTip": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Controllers\\FestivalController.cs",
               "RelativeToolTip": "Controllers\\FestivalController.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAqwKYAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAuwKAAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T14:01:26.601Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-13T14:01:26.601Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAcwBkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-13T13:29:19.395Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 41,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -249,19 +651,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "FestivalContext.cs",
               "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Data\\FestivalContext.cs",
               "RelativeDocumentMoniker": "Data\\FestivalContext.cs",
               "ToolTip": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Data\\FestivalContext.cs",
               "RelativeToolTip": "Data\\FestivalContext.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-13T13:28:22.858Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "Ticket.cs",
               "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\Domain\\Ticket.cs",
               "RelativeDocumentMoniker": "Models\\Domain\\Ticket.cs",
@@ -273,37 +675,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Artist.cs",
-              "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\Domain\\Artist.cs",
-              "RelativeDocumentMoniker": "Models\\Domain\\Artist.cs",
-              "ToolTip": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\Domain\\Artist.cs",
-              "RelativeToolTip": "Models\\Domain\\Artist.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T13:25:04.468Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Venue.cs",
-              "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\Domain\\Venue.cs",
-              "RelativeDocumentMoniker": "Models\\Domain\\Venue.cs",
-              "ToolTip": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\Domain\\Venue.cs",
-              "RelativeToolTip": "Models\\Domain\\Venue.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T13:24:41.363Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 3,
               "Title": "Festival.cs",
               "DocumentMoniker": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\Domain\\Festival.cs",
               "RelativeDocumentMoniker": "Models\\Domain\\Festival.cs",
               "ToolTip": "D:\\Projects\\FestivalFusion\\FestivalFusion.API\\Models\\Domain\\Festival.cs",
               "RelativeToolTip": "Models\\Domain\\Festival.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAwAkAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-13T13:24:19.38Z"
             }

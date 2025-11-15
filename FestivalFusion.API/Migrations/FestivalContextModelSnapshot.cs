@@ -30,6 +30,10 @@ namespace FestivalFusion.API.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ArtistId"));
 
+                    b.Property<string>("ArtistImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Bio")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -63,6 +67,10 @@ namespace FestivalFusion.API.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("FestivalDescription")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FestivalImageUrl")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -125,6 +133,10 @@ namespace FestivalFusion.API.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("VenueImageUrl")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

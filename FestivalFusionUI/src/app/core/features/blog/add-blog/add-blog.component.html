@@ -1,0 +1,149 @@
+<div class="container">
+    <!-- Breadcrumb for Blog -->
+    <nav aria-label="breadcrumb" class="mt-3">
+      <ol class="breadcrumb bg-white px-3 py-2 rounded-3 shadow-sm">
+        <li class="breadcrumb-item">
+          <a routerLink="/" class="text-decoration-none fw-bold">
+            <i class="bi bi-house-door"></i> Home
+          </a>
+        </li>
+        <li class="breadcrumb-item">
+          <a routerLink="/admin/blog" class="text-decoration-none fw-bold">
+            <i class="bi bi-journal-text"></i> Blog
+          </a>
+        </li>
+        <li class="breadcrumb-item active fw-bold text-dark" aria-current="page">
+          Add Post
+        </li>
+      </ol>
+    </nav>
+  
+    <h3 class="mt-4 mb-4 text-center text-gradient">Add Blog Post</h3>
+  
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <form #form="ngForm" (ngSubmit)="onFormSubmit()" class="p-4 rounded-4 shadow-lg bg-white" novalidate>
+          <div class="row gy-4">
+  
+            <div class="col-md-8">
+              <div class="form-floating">
+                <input
+                  type="text"
+                  id="title"
+                  name="title"
+                  class="form-control"
+                  placeholder="Title"
+                  required
+                  [(ngModel)]="model.title"
+                  aria-label="Post Title">
+                
+              </div>
+            </div>
+  
+            <div class="col-md-4">
+              <div class="form-floating">
+                <input
+                  type="text"
+                  id="category"
+                  name="category"
+                  class="form-control"
+                  placeholder="Category"
+                  [(ngModel)]="model.category"
+                  aria-label="Category">
+              </div>
+            </div>
+  
+            <div class="col-md-12">
+              <div class="form-floating">
+                <textarea
+                  id="content"
+                  name="content"
+                  class="form-control"
+                  placeholder="Content"
+                  style="height: 200px;"
+                  [(ngModel)]="model.content"
+                  aria-label="Post Content"></textarea>
+              </div>
+            </div>
+  
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input
+                        type="text"
+                        id="author"
+                        name="author"
+                        class="form-control"
+                        placeholder="Author"
+                        [(ngModel)]="model.author"
+                        aria-label="Author">
+                </div>
+            </div>
+  
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input
+                        type="date"
+                        id="publishedDate"
+                        name="publishedDate"
+                        class="form-control"
+                        placeholder="Published Date"
+                        [(ngModel)]="model.publishedDate"
+                        aria-label="Published Date">
+                </div>
+            </div>
+  
+            <div class="col-md-12">
+              <div class="form-floating">
+                <input
+                  type="url"
+                  id="featuredImageUrl"
+                  name="featuredImageUrl"
+                  class="form-control"
+                  placeholder="https://example.com/image.jpg"
+                  [(ngModel)]="model.featuredImageUrl"
+                  aria-label="Featured Image URL">
+              </div>
+            </div>
+  
+            <!-- Checkboxes Section -->
+            <div class="col-md-12">
+              <div class="checkbox-group">
+                <div class="form-check form-check-inline">
+                  <input
+                    type="checkbox"
+                    id="isPublished"
+                    name="isPublished"
+                    class="form-check-input"
+                    [(ngModel)]="model.isPublished"
+                    aria-label="Publish Post">
+                  <label class="form-check-label" for="isPublished">
+                    <i class="bi bi-check-circle"></i> Publish Post
+                  </label>
+                </div>
+  
+                <div class="form-check form-check-inline">
+                  <input
+                    type="checkbox"
+                    id="isFeatured"
+                    name="isFeatured"
+                    class="form-check-input"
+                    [(ngModel)]="model.isFeatured"
+                    aria-label="Featured Post">
+                  <label class="form-check-label" for="isFeatured">
+                    <i class="bi bi-star"></i> Featured Post
+                  </label>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-12 text-center mt-4">
+              <button type="submit" class="btn btn-primary btn-lg px-5 rounded-pill shadow">
+                Add Blog Post
+              </button>
+            </div>
+  
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>

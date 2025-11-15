@@ -3,6 +3,7 @@
     public class UpdateFestivalRequestDto
     {
         public string FestivalName { get; set; }
+        public string FestivalImageUrl { get; set; }
         public string FestivalDescription { get; set; }
         public string Theme { get; set; }
         public DateTime StartDate { get; set; }

@@ -2,7 +2,7 @@
 <section id="hero" class="hero section dark-background">
 
     <div class="hero-background">
-        <img src="/assets/img/hero-background.jpeg" alt="Festival Fusion Background" data-aos-duration="1000">
+      <img src="hero-background.jpeg" alt="Festival Fusion Background" data-aos-duration="1000">
       <div class="overlay"></div>
     </div>
   
@@ -14,12 +14,12 @@
             <h1>Unite, Discover & Celebrate Festivals Like Never Before</h1>
             <p>Welcome to Festival Fusion—where organizers, artists, venues, sponsors, and fans come together to create extraordinary events. Book festivals, connect with talent, discover venues, and engage with the community, all in one place.</p>
             <div class="hero-actions">
-              <a href="#explore" class="btn-primary">Explore Festivals</a>
-              <a href="#artists" class="btn-secondary">
+              <a [routerLink]="['/admin/festival']" class="btn-primary">Explore Festivals</a>
+              <a [routerLink]="['/admin/artist']" class="btn-secondary">
                 <i class="bi bi-music-note-list"></i>
                 <span>Find Artists</span>
               </a>
-              <a href="#blog" class="btn-secondary">
+              <a [routerLink]="['/admin/blog']" class="btn-secondary">
                 <i class="bi bi-journal-text"></i>
                 <span>Read Stories</span>
               </a>
@@ -107,16 +107,15 @@
             </div>
 
             <div class="cta-wrapper">
-              <a href="#portfolio" class="btn btn-primary">Explore Festivals</a>
-              <a href="#team" class="btn btn-outline">Meet Our Team</a>
-              <a href="#blog" class="btn btn-outline">Read Our Blog</a>
+              <a [routerLink]="['/admin/festival']" class="btn btn-primary">Explore Festivals</a>
+              <a [routerLink]="['/admin/blog']" class="btn btn-outline">Read Our Blog</a>
             </div>
           </div>
         </div>
 
         <div class="col-lg-6">
           <div class="image-wrapper">
-            <img src="assets/img/about/about-square-8.webp" alt="Festival Fusion Team" class="img-fluid main-image">
+            <img src="about.jpeg" alt="Festival Fusion Team" class="img-fluid main-image">
             <div class="floating-card">
               <div class="card-content">
                 <i class="bi bi-award"></i>
@@ -135,14 +134,13 @@
 <!-- Featured Services Section -->
 <section id="featured-services" class="featured-services section light-background">
 
-    <!-- Section Title -->
+  <!-- Section Title -->
     <div class="container section-title">
       <h2>Featured Festival Fusion Services</h2>
       <p>Discover our core offerings for festivals, artists, venues, and sponsors</p>
-    </div><!-- End Section Title -->
+      </div>
   
     <div class="container">
-  
       <div class="row">
         <div class="col-lg-6">
           <div class="services-content" data-aos-duration="900">
@@ -151,14 +149,11 @@
             <p data-aos-duration="800">
               Festival Fusion makes it easy to plan, manage, and elevate your next event. From artist bookings and venue reservations to sponsor engagement and community storytelling, our platform is designed to unite everyone who makes festivals extraordinary.
             </p>
-            <div class="mt-4" data-aos-duration="1100">
-              <a href="#contact" class="btn-consultation"><span>Start Your Festival Journey</span><i class="bi bi-arrow-right"></i></a>
-            </div>
           </div>
         </div>
         <div class="col-lg-6">
           <div class="services-image">
-            <img src="assets/img/services/services-9.webp" alt="Festival Fusion Services" class="img-fluid">
+            <img src="winter.jpg" alt="Festival Fusion Team" class="img-fluid main-image">
             <div class="shape-circle"></div>
             <div class="shape-accent"></div>
           </div>
@@ -271,15 +266,6 @@
         </div>
       </div>
   
-      <div class="row">
-        <div class="col-12">
-          <div class="swiper-navigation">
-            <button class="swiper-nav-prev"><i class="bi bi-chevron-left"></i></button>
-            <button class="swiper-nav-next"><i class="bi bi-chevron-right"></i></button>
-          </div>
-        </div>
-      </div>
-  
     </div>
-  
-  </section><!-- /Featured Services Section -->
+    </section>
+

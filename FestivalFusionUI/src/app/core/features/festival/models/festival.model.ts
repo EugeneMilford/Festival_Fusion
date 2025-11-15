@@ -1,9 +1,10 @@
 export interface Festival {
-    festivalId: string,  // or number - API returns number
+    festivalId: string,  
     festivalName: string,
+    festivalImageUrl: string,
     festivalDescription: string,
     theme: string,
     startDate: string,
-    endDate: string,  // Changed from 'enddate' to 'endDate'
+    endDate: string,  
     sponsor: string
 }
