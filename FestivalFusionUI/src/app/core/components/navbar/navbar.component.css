@@ -243,3 +243,80 @@ html {
 .mobile-nav-overlay.active {
   display: block;
 }
+
+/* Login Button Styles */
+.header .btn-primary {
+  padding: 10px 24px;
+  background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);
+  border: 2px solid transparent;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.header .btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  transition: left 0.4s ease;
+  z-index: -1;
+}
+
+.header .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(124, 58, 237, 0.4);
+  color: #ffffff;
+}
+
+.header .btn-primary:hover::before {
+  left: 0;
+}
+
+.header .btn-primary:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3);
+}
+
+/* Add icon support (optional) */
+.header .btn-primary i {
+  font-size: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1199px) {
+  .header .d-flex {
+    position: fixed;
+    top: 20px;
+    right: 70px;
+    z-index: 9999;
+  }
+
+  .header .btn-primary {
+    padding: 8px 20px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 575px) {
+  .header .d-flex {
+    right: 60px;
+  }
+
+  .header .btn-primary {
+    padding: 6px 16px;
+    font-size: 12px;
+  }
+}

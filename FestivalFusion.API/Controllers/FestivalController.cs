@@ -2,6 +2,7 @@
 using FestivalFusion.API.Modals.Domain;
 using FestivalFusion.API.Models.DTO;
 using FestivalFusion.API.Repositories.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -20,6 +21,7 @@ namespace FestivalFusion.API.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Writer,Editor,Moderator")]
         public async Task<IActionResult> CreateFestival(CreateFestivalRequestDto request)
         {
             // Map DTO to Domain Model
@@ -54,6 +56,7 @@ namespace FestivalFusion.API.Controllers
 
         // GET: /api/festivals
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> GetAllFestivals()
         {
             var festivals = await festivalRepository.GetAllAsync();
@@ -80,6 +83,7 @@ namespace FestivalFusion.API.Controllers
 
         // GET: https://localhost:7164/api/festivals/{id}
         [HttpGet]
+        [Authorize]
         [Route("{id:int}")]
         public async Task<IActionResult> GetFestivalById([FromRoute] int id)
         {
@@ -107,6 +111,7 @@ namespace FestivalFusion.API.Controllers
         }
 
         [HttpPut]
+        [Authorize(Roles = "Editor,Moderator")]
         [Route("{id:int}")]
         public async Task<IActionResult> EditFestival([FromRoute] int id, UpdateFestivalRequestDto request)
         {
@@ -147,6 +152,7 @@ namespace FestivalFusion.API.Controllers
         }
 
         [HttpDelete]
+        [Authorize(Roles = "Editor")]
         [Route("{id:int}")]
         public async Task<IActionResult> DeleteFestival([FromRoute] int id)
         {

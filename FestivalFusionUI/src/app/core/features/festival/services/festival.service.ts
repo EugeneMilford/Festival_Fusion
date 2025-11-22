@@ -7,34 +7,36 @@ import { environment } from '../../../../../environments/environment';
 import { UpdateFestivalRequest } from '../models/update-festival-request.model';
 
 @Injectable({
-  providedIn: 'root'  // This should be here
+  providedIn: 'root'
 })
 export class FestivalService {
-  constructor(private http: HttpClient) { }
+  
+  constructor(private http: HttpClient) { }  // Removed CookieService
 
   // Return all festivals
   getAllFestivals(): Observable<Festival[]> {
-    return this.http.get<Festival[]>(`${environment.apiBaseUrl}/api/festival`);
+    return this.http.get<Festival[]>(`${environment.apiBaseUrl}/api/festival?addAuth=true`);
   }
 
-  // Add a new festival 
+  // Add a new festival
   addFestival(model: AddFestivalRequest): Observable<Festival> {
-    return this.http.post<Festival>(`${environment.apiBaseUrl}/api/festival`, model);
+    return this.http.post<Festival>(`${environment.apiBaseUrl}/api/festival?addAuth=true`, model);
   }
 
   // Get a festival by id
   getFestivalById(id: string): Observable<Festival> {
-    return this.http.get<Festival>(`${environment.apiBaseUrl}/api/festival/${id}`);
+    return this.http.get<Festival>(`${environment.apiBaseUrl}/api/festival/${id}?addAuth=true`);
   }
 
   // Update a Festival
   updateFestival(id: string, updateFestivalRequest: UpdateFestivalRequest): Observable<Festival> {
-    return this.http.put<Festival>(`${environment.apiBaseUrl}/api/festival/${id}`, updateFestivalRequest);
+    return this.http.put<Festival>(`${environment.apiBaseUrl}/api/festival/${id}?addAuth=true`, updateFestivalRequest);
   }
 
   // Delete a Festival
   deleteFestival(id: string): Observable<Festival> {
-    return this.http.delete<Festival>(`${environment.apiBaseUrl}/api/festival/${id}`)
+    return this.http.delete<Festival>(`${environment.apiBaseUrl}/api/festival/${id}?addAuth=true`);
   }
 }
+
 

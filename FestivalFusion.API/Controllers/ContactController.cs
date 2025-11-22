@@ -4,11 +4,13 @@ using Microsoft.AspNetCore.Mvc;
 using FestivalFusion.API.Models.DTO;
 using FestivalFusion.API.Models.Domain;
 using FestivalFusion.API.Repositories.Interface;
+using Microsoft.AspNetCore.Authorization;
 
 namespace FestivalFusion.API.Controllers
 {
     // https://localhost:7461/api/contact
     [Route("api/[controller]")]
+    [Authorize]
     [ApiController]
     public class ContactController : ControllerBase
     {
@@ -46,7 +48,7 @@ namespace FestivalFusion.API.Controllers
                 Message = contact.Message
             };
 
-            // Return 201 with the created resource payload (location could be added when a GetById route exists)
+            // Return 201 with the created resource payload 
             return CreatedAtAction(nameof(GetAllContacts), null, response);
         }
 

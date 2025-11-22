@@ -146,3 +146,9 @@ D:\Projects\FestivalFusion\FestivalFusion.API\obj\Debug\net8.0\refint\FestivalFu
 D:\Projects\FestivalFusion\FestivalFusion.API\obj\Debug\net8.0\FestivalFusion.API.pdb
 D:\Projects\FestivalFusion\FestivalFusion.API\obj\Debug\net8.0\FestivalFusion.API.genruntimeconfig.cache
 D:\Projects\FestivalFusion\FestivalFusion.API\obj\Debug\net8.0\ref\FestivalFusion.API.dll
+D:\Projects\FestivalFusion\FestivalFusion.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Projects\FestivalFusion\FestivalFusion.API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Projects\FestivalFusion\FestivalFusion.API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Projects\FestivalFusion\FestivalFusion.API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Projects\FestivalFusion\FestivalFusion.API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+D:\Projects\FestivalFusion\FestivalFusion.API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll

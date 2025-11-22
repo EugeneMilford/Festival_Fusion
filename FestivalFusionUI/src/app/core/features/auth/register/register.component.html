@@ -1,0 +1,97 @@
+<div class="container">
+    <div class="mt-5">
+      <div class="col-12 col-md-6 col-lg-5 mx-auto">
+        <h1>Create Account</h1>
+        <p class="text-muted">Join Festival Fusion today</p>
+  
+        <!-- Success Message -->
+        <div class="alert alert-success" *ngIf="successMessage">
+          <i class="bi bi-check-circle"></i> {{ successMessage }}
+        </div>
+  
+        <!-- Error Message -->
+        <div class="alert alert-danger" *ngIf="errorMessage">
+          <i class="bi bi-exclamation-triangle"></i> {{ errorMessage }}
+        </div>
+  
+        <form #form="ngForm" (ngSubmit)="onFormSubmit()">
+          <!-- Email -->
+          <div class="mt-3">
+            <label for="email" class="form-label">
+              <i class="bi bi-envelope"></i> Email Address
+            </label>
+            <input 
+              type="email" 
+              class="form-control" 
+              id="email" 
+              name="email"
+              placeholder="Enter your email"
+              [(ngModel)]="model.email"
+              required
+              email>
+          </div>
+  
+          <!-- Password -->
+          <div class="mt-3">
+            <label for="password" class="form-label">
+              <i class="bi bi-lock"></i> Password
+            </label>
+            <input 
+              type="password" 
+              class="form-control" 
+              id="password" 
+              name="password"
+              placeholder="Enter your password"
+              [(ngModel)]="model.password"
+              required
+              minlength="6">
+            <small class="form-text text-muted">
+              Password must be at least 6 characters long.
+            </small>
+          </div>
+  
+          <!-- Roles Selection -->
+          <div class="mt-3">
+            <label class="form-label">
+              <i class="bi bi-person-badge"></i> Select Roles
+            </label>
+            <div class="card">
+              <div class="card-body">
+                <div class="form-check" *ngFor="let role of availableRoles">
+                  <input 
+                    class="form-check-input" 
+                    type="checkbox" 
+                    [id]="'role-' + role"
+                    [checked]="selectedRoles[role]"
+                    (change)="toggleRole(role)">
+                  <label class="form-check-label" [for]="'role-' + role">
+                    <strong>{{ role }}</strong>
+                    <small class="d-block text-muted">
+                      <ng-container [ngSwitch]="role">
+                        <span *ngSwitchCase="'Reader'">Can view all content</span>
+                        <span *ngSwitchCase="'Writer'">Can view and add new content</span>
+                        <span *ngSwitchCase="'Editor'">Can view, add, edit, and delete content</span>
+                        <span *ngSwitchCase="'Moderator'">Can view and edit content</span>
+                      </ng-container>
+                    </small>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Submit Button -->
+          <div class="mt-3">
+            <button type="submit" class="btn btn-primary w-100" [disabled]="!form.valid">
+              <i class="bi bi-person-plus"></i> Create Account
+            </button>
+          </div>
+        </form>
+  
+        <!-- Login Link -->
+        <div class="text-center mt-4">
+          <p>Already have an account? <a [routerLink]="['/login']" class="text-decoration-none">Login</a></p>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -17,8 +17,19 @@
 
   <h1 class="mt-3">List of Festivals</h1>
 
+  <!-- Only show Add button for Writer and Editor roles -->
   <div class="d-flex justify-content-end mt-3">
-    <a [routerLink]="['/admin/festival/add']" class="btn btn-primary">Add new Festival</a>
+    <a 
+      [routerLink]="['/admin/festival/add']" 
+      class="btn btn-primary"
+      *ngIf="canAdd()">
+      <i class="bi bi-plus-circle"></i> Add new Festival
+    </a>
+    
+    <!-- Show message for Readers -->
+    <div class="alert alert-info mb-0" *ngIf="!canAdd() && !canEdit()">
+      <i class="bi bi-info-circle"></i> You are viewing as a Reader. Contact an administrator for edit access.
+    </div>
   </div>
 
   <br>
@@ -54,15 +65,24 @@
                 {{festival.sponsor}}
               </li>
             </ul>
-            <a class="btn btn-sm btn-outline-primary"
-               [routerLink]="['/admin/festival', festival.festivalId]">
-              Edit
-            </a>
-            <button 
-              class="btn btn-sm btn-outline-secondary" 
-              (click)="openFestivalModal(festival)">
-              Read More
-            </button>
+            
+            <!-- Action Buttons based on Roles -->
+            <div class="d-flex gap-2 flex-wrap">
+              <!-- Edit button: Only for Writer, Editor, Moderator -->
+              <a 
+                class="btn btn-sm btn-outline-primary"
+                [routerLink]="['/admin/festival', festival.festivalId]"
+                *ngIf="canEdit()">
+                <i class="bi bi-pencil"></i> Edit
+              </a>
+              
+              <!-- Read More button: Available for everyone -->
+              <button 
+                class="btn btn-sm btn-outline-secondary" 
+                (click)="openFestivalModal(festival)">
+                <i class="bi bi-eye"></i> Read More
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -116,16 +136,20 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <a [routerLink]="['/admin/festival', selectedFestival.festivalId]" 
-           class="btn btn-primary" 
-           data-bs-dismiss="modal">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          <i class="bi bi-x-circle"></i> Close
+        </button>
+        
+        <!-- Edit button in modal: Only for Writer, Editor, Moderator -->
+        <a 
+          [routerLink]="['/admin/festival', selectedFestival.festivalId]" 
+          class="btn btn-primary" 
+          data-bs-dismiss="modal"
+          *ngIf="canEdit()">
           <i class="bi bi-pencil"></i> Edit Festival
         </a>
       </div>
     </div>
   </div>
 </div>
-  
-
 

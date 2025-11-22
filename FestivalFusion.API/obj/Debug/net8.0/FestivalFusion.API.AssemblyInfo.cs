@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FestivalFusion.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+11a30719e72d6d67f7300e35cc5beea430f38989")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+30e25b085c81958ecdac0aaec7996ad511660867")]
 [assembly: System.Reflection.AssemblyProductAttribute("FestivalFusion.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FestivalFusion.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

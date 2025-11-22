@@ -16,75 +16,87 @@
 
   <h3 class="mt-4 mb-4 text-center text-gradient">Add Contact</h3>
 
-  <div class="row justify-content-center">
-    <div class="col-lg-8">
-      <form #form="ngForm" (ngSubmit)="onContactSubmit()" class="p-4 rounded-4 shadow-lg bg-white">
-        <div class="row gy-4">
-          
-          <div class="col-md-6">
-            <label for="name">Name</label>
-            <div class="form-floating">
-              <input 
-                type="text" 
-                id="name"
-                name="name" 
-                class="form-control" 
-                placeholder="Name" 
-                required 
-                [(ngModel)]="model.name">
+  <!-- Only show form to authenticated users; everyone authorized (authenticated) can send a message -->
+  <ng-container *ngIf="isAuthenticated(); else notAuthenticated">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <form #form="ngForm" (ngSubmit)="onContactSubmit()" class="p-4 rounded-4 shadow-lg bg-white">
+          <div class="row gy-4">
+            
+            <div class="col-md-6">
+              <label for="name">Name</label>
+              <div class="form-floating">
+                <input 
+                  type="text" 
+                  id="name"
+                  name="name" 
+                  class="form-control" 
+                  placeholder="Name" 
+                  required 
+                  [(ngModel)]="model.name">
+              </div>
             </div>
-          </div>
-  
-          <div class="col-md-6">
-            <label for="surname">Surname</label>
-            <div class="form-floating">
-              <input 
-                type="text" 
-                id="surname"
-                name="surname" 
-                class="form-control" 
-                placeholder="Surname" 
-                required 
-                [(ngModel)]="model.surname">
+    
+            <div class="col-md-6">
+              <label for="surname">Surname</label>
+              <div class="form-floating">
+                <input 
+                  type="text" 
+                  id="surname"
+                  name="surname" 
+                  class="form-control" 
+                  placeholder="Surname" 
+                  required 
+                  [(ngModel)]="model.surname">
+              </div>
             </div>
-          </div>
-  
-          <div class="col-md-12">
-            <label for="phoneNumber">Phone Number</label>
-            <div class="form-floating">
-              <input 
-                type="tel" 
-                id="phoneNumber"
-                name="phoneNumber" 
-                class="form-control" 
-                placeholder="Phone Number" 
-                required 
-                [(ngModel)]="model.phoneNumber">
+    
+            <div class="col-md-12">
+              <label for="phoneNumber">Phone Number</label>
+              <div class="form-floating">
+                <input 
+                  type="tel" 
+                  id="phoneNumber"
+                  name="phoneNumber" 
+                  class="form-control" 
+                  placeholder="Phone Number" 
+                  required 
+                  [(ngModel)]="model.phoneNumber">
+              </div>
             </div>
-          </div>
-  
-          <div class="col-md-12">
-            <label for="message">Your Message</label>
-            <div class="form-floating">
-              <textarea 
-                id="message"
-                name="message" 
-                class="form-control" 
-                placeholder="Your Message" 
-                style="height: 150px;"
-                required 
-                [(ngModel)]="model.message"></textarea>
+    
+            <div class="col-md-12">
+              <label for="message">Your Message</label>
+              <div class="form-floating">
+                <textarea 
+                  id="message"
+                  name="message" 
+                  class="form-control" 
+                  placeholder="Your Message" 
+                  style="height: 150px;"
+                  required 
+                  [(ngModel)]="model.message"></textarea>
+              </div>
             </div>
+    
+            <div class="col-md-12 text-center mt-4">
+              <button type="submit" class="btn btn-primary btn-lg px-5 rounded-pill shadow">Submit Contact</button>
+            </div>
+    
           </div>
-  
-          <div class="col-md-12 text-center mt-4">
-            <button type="submit" class="btn btn-primary btn-lg px-5 rounded-pill shadow">Submit Contact</button>
-          </div>
-  
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
-  </div>
+  </ng-container>
+
+  <ng-template #notAuthenticated>
+    <div class="alert alert-warning">
+      <i class="bi bi-exclamation-triangle-fill"></i>
+      You must be signed in to send a message. Please
+      <a [routerLink]="['/auth/login']" class="text-decoration-underline">sign in</a>
+      or contact an administrator for access.
+    </div>
+  </ng-template>
 </div>
 
 <!-- Modal Backdrop -->

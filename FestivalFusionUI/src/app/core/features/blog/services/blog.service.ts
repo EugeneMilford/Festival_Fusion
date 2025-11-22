@@ -15,26 +15,26 @@ export class BlogService {
 
   // Return all Blog Posts
   getAllBlogPosts(): Observable<Blog[]> {
-    return this.http.get<Blog[]>(`${environment.apiBaseUrl}/api/blogs`);
+    return this.http.get<Blog[]>(`${environment.apiBaseUrl}/api/blogs?addAuth=true`);
   }
 
   // Add a new Blog Post
   addBlogPost(model: AddBlogRequest): Observable<Blog> {
-    return this.http.post<Blog>(`${environment.apiBaseUrl}/api/blogs`, model);
+    return this.http.post<Blog>(`${environment.apiBaseUrl}/api/blogs?addAuth=true`, model);
   }
 
   // Get a Blog by id
   getBlogById(id: string): Observable<Blog> {
-    return this.http.get<Blog>(`${environment.apiBaseUrl}/api/blogs/${id}`);
+    return this.http.get<Blog>(`${environment.apiBaseUrl}/api/blogs/${id}?addAuth=true`);
   }
 
   // Update a Blog Post
   updateBlogPost(id: string, updateBlogRequest: UpdateBlogRequest): Observable<Blog> {
-    return this.http.put<Blog>(`${environment.apiBaseUrl}/api/blogs/${id}`, updateBlogRequest);
+    return this.http.put<Blog>(`${environment.apiBaseUrl}/api/blogs/${id}?addAuth=true`, updateBlogRequest);
   }
 
   // Remove a Blog
   deleteBlogPost(id: string): Observable<Blog> {
-    return this.http.delete<Blog>(`${environment.apiBaseUrl}/api/blogs/${id}`)
+    return this.http.delete<Blog>(`${environment.apiBaseUrl}/api/blogs/${id}?addAuth=true`);
   }
 }

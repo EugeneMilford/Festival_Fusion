@@ -16,8 +16,29 @@ import { EditVenueComponent } from './core/features/venue/edit-venue/edit-venue.
 import { BlogListComponent } from './core/features/blog/blog-list/blog-list.component';
 import { AddBlogComponent } from './core/features/blog/add-blog/add-blog.component';
 import { EditBlogComponent } from './core/features/blog/edit-blog/edit-blog.component';
+import { LoginComponent } from './core/features/auth/login/login.component';
+import { WelcomeComponent } from './core/components/welcome/welcome/welcome.component';
+import { RegisterComponent } from './core/features/auth/register/register.component';
 
 export const routes: Routes = [
+    // Default route - redirect to welcome
+    {
+        path: '',
+        redirectTo: '/welcome',
+        pathMatch: 'full'
+    },
+    {
+        path: 'welcome',
+        component: WelcomeComponent
+    },
+    {
+        path: 'login',
+        component: LoginComponent
+    },
+    {
+        path: 'register',
+        component: RegisterComponent
+    },
     {
         path: 'home',
         component: HomeComponent
@@ -86,4 +107,9 @@ export const routes: Routes = [
         path: 'admin/blog/:id',
         component: EditBlogComponent
     },
+    // Wildcard route - redirect any unknown routes to welcome
+    {
+        path: '**',
+        redirectTo: '/welcome'
+    }
 ];

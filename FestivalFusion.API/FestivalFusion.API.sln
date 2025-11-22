@@ -5,6 +5,8 @@ VisualStudioVersion = 17.12.35209.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FestivalFusion.API", "FestivalFusion.API.csproj", "{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FestivalFusion.Tests", "..\FestivalFusion.Tests\FestivalFusion.Tests.csproj", "{9F72270E-989F-4FEE-B5DF-458526708C7D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{515E1B94-E996-4DE8-A31D-CA0CA8C0478F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F72270E-989F-4FEE-B5DF-458526708C7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F72270E-989F-4FEE-B5DF-458526708C7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F72270E-989F-4FEE-B5DF-458526708C7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F72270E-989F-4FEE-B5DF-458526708C7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

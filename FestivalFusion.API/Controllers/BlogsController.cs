@@ -1,6 +1,7 @@
 ﻿using FestivalFusion.API.Models.Domain;
 using FestivalFusion.API.Models.DTO;
 using FestivalFusion.API.Repositories.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -20,6 +21,7 @@ namespace FestivalFusion.API.Controllers
 
         // POST: /api/blog
         [HttpPost]
+        [Authorize(Roles = "Writer,Editor,Moderator")]
         public async Task<IActionResult> AddBlog(AddBlogRequestDto request)
         {
             // Map DTO to Domain Model
@@ -59,6 +61,7 @@ namespace FestivalFusion.API.Controllers
 
         // GET: /api/blog
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> GetAllBlogs()
         {
             var blogs = await blogRepository.GetAllAsync();
@@ -88,6 +91,7 @@ namespace FestivalFusion.API.Controllers
 
         // GET: /api/blog/{id}
         [HttpGet]
+        [Authorize]
         [Route("{id:int}")]
         public async Task<IActionResult> GetBlogById([FromRoute] int id)
         {
@@ -118,6 +122,7 @@ namespace FestivalFusion.API.Controllers
 
         // PUT: /api/blog/{id}
         [HttpPut]
+        [Authorize(Roles = "Editor,Moderator")]
         [Route("{id:int}")]
         public async Task<IActionResult> EditBlog([FromRoute] int id, UpdateBlogRequestDto request)
         {
@@ -163,6 +168,7 @@ namespace FestivalFusion.API.Controllers
 
         // DELETE: /api/blog/{id}
         [HttpDelete]
+        [Authorize(Roles = "Editor")]
         [Route("{id:int}")]
         public async Task<IActionResult> RemoveBlog([FromRoute] int id)
         {

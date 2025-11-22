@@ -1,6 +1,7 @@
 ﻿using FestivalFusion.API.Modals.Domain;
 using FestivalFusion.API.Models.DTO;
 using FestivalFusion.API.Repositories.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -19,6 +20,7 @@ namespace FestivalFusion.API.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Writer,Editor,Moderator")]
         public async Task<IActionResult> AddArtist(AddArtistRequestDto request)
         {
             // Map DTO to Domain Model
@@ -49,11 +51,12 @@ namespace FestivalFusion.API.Controllers
 
         // GET: /api/artists
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> GetAllArtists()
         {
             var artists = await artistRepository.GetAllAsync();
 
-            //Convert Festival domain model to DTO
+            //Convert Artist domain model to DTO
             var response = new List<ArtistDto>();
 
             foreach (var artist in artists)
@@ -74,6 +77,7 @@ namespace FestivalFusion.API.Controllers
 
         // GET: https://localhost:7461/api/artists/{id}
         [HttpGet]
+        [Authorize]
         [Route("{id:int}")]
         public async Task<IActionResult> GetArtistById([FromRoute] int id)
         {
@@ -98,8 +102,9 @@ namespace FestivalFusion.API.Controllers
             return Ok(response);
         }
 
-        // PUT: /api/artists/
+        // PUT: /api/artists/{id}
         [HttpPut]
+        [Authorize(Roles = "Editor,Moderator")]
         [Route("{id:int}")]
         public async Task<IActionResult> EditArtist([FromRoute] int id, UpdateArtistRequestDto request)
         {
@@ -108,7 +113,7 @@ namespace FestivalFusion.API.Controllers
             {
                 ArtistId = id,
                 Name = request.Name,
-                ArtistImageUrl= request.ArtistImageUrl,
+                ArtistImageUrl = request.ArtistImageUrl,
                 Genre = request.Genre,
                 Country = request.Country,
                 Bio = request.Bio
@@ -135,8 +140,9 @@ namespace FestivalFusion.API.Controllers
             return Ok(response);
         }
 
-        // DELETE: /api/artists/
+        // DELETE: /api/artists/{id}
         [HttpDelete]
+        [Authorize(Roles = "Editor")]
         [Route("{id:int}")]
         public async Task<IActionResult> RemoveArtist([FromRoute] int id)
         {

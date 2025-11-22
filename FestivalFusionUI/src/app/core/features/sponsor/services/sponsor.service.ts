@@ -15,26 +15,26 @@ export class SponsorService {
 
   // Adding a Sponsor
   addSponsor(model: AddSponsorRequest): Observable<void> {
-    return this.http.post<void>(`${environment.apiBaseUrl}/api/sponsor`, model);
+    return this.http.post<void>(`${environment.apiBaseUrl}/api/sponsor?addAuth=true`, model);
   }
 
   // Return all Sponsors
   getAllSponsors(): Observable<Sponsor[]>{
-    return this.http.get<Sponsor[]>(`${environment.apiBaseUrl}/api/sponsor`);
+    return this.http.get<Sponsor[]>(`${environment.apiBaseUrl}/api/sponsor?addAuth=true`);
   }
 
   // Get a Sponsor by id
   getSponsorById(id: string): Observable<Sponsor> {
-    return this.http.get<Sponsor>(`${environment.apiBaseUrl}/api/sponsor/${id}`);
+    return this.http.get<Sponsor>(`${environment.apiBaseUrl}/api/sponsor/${id}?addAuth=true`);
   }
 
   // Update a Sponsor
   updateSponsor(id: string, updateSponsorRequest: UpdateSponsorRequest): Observable<Sponsor> {
-    return this.http.put<Sponsor>(`${environment.apiBaseUrl}/api/sponsor/${id}`, updateSponsorRequest);
+    return this.http.put<Sponsor>(`${environment.apiBaseUrl}/api/sponsor/${id}?addAuth=true`, updateSponsorRequest);
   }
 
   // Delete a Sponsor
   removeSponsor(id: string): Observable<Sponsor> {
-    return this.http.delete<Sponsor>(`${environment.apiBaseUrl}/api/sponsor/${id}`)
+    return this.http.delete<Sponsor>(`${environment.apiBaseUrl}/api/sponsor/${id}?addAuth=true`)
   }
 }

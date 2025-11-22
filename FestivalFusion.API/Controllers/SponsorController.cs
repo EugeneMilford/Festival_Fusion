@@ -2,6 +2,7 @@
 using FestivalFusion.API.Models.DTO;
 using FestivalFusion.API.Repositories.Implementation;
 using FestivalFusion.API.Repositories.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -20,6 +21,7 @@ namespace FestivalFusion.API.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Writer,Editor,Moderator")]
         public async Task<IActionResult> AddSponsor(AddSponsorRequestDto request)
         {
             // Map DTO to Domain Model
@@ -46,13 +48,14 @@ namespace FestivalFusion.API.Controllers
             return Ok(response);
         }
 
-        // GET: /api/sponsors
+        // GET: /api/sponsor
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> GetAllSponsors()
         {
             var sponsors = await sponsorRepository.GetAllAsync();
 
-            //Convert Festival domain model to DTO
+            //Convert Sponsor domain model to DTO
             var response = new List<SponsorDto>();
 
             foreach (var sponsor in sponsors)
@@ -70,8 +73,9 @@ namespace FestivalFusion.API.Controllers
             return Ok(response);
         }
 
-        // GET: https://localhost:7461/api/sponsors/{id}
+        // GET: https://localhost:7461/api/sponsor/{id}
         [HttpGet]
+        [Authorize]
         [Route("{id:int}")]
         public async Task<IActionResult> GetSponsorById([FromRoute] int id)
         {
@@ -95,8 +99,9 @@ namespace FestivalFusion.API.Controllers
             return Ok(response);
         }
 
-        // PUT: https://localhost:7461/api/sponsors/{id}
+        // PUT: https://localhost:7461/api/sponsor/{id}
         [HttpPut]
+        [Authorize(Roles = "Editor,Moderator")]
         [Route("{id:int}")]
         public async Task<IActionResult> EditSponsor([FromRoute] int id, UpdateSponsorRequestDto request)
         {
@@ -130,8 +135,9 @@ namespace FestivalFusion.API.Controllers
             return Ok(response);
         }
 
-        // DELETE: https://localhost:7461/api/sponsors/{id}
+        // DELETE: https://localhost:7461/api/sponsor/{id}
         [HttpDelete]
+        [Authorize(Roles = "Editor")]
         [Route("{id:int}")]
         public async Task<IActionResult> RemoveSponsor([FromRoute] int id)
         {

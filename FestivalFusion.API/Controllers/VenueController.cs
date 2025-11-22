@@ -3,6 +3,7 @@ using FestivalFusion.API.Modals.Domain;
 using FestivalFusion.API.Models.DTO;
 using FestivalFusion.API.Repositories.Implementation;
 using FestivalFusion.API.Repositories.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -21,6 +22,7 @@ namespace FestivalFusion.API.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Writer,Editor,Moderator")]
         public async Task<IActionResult> AddVenue(AddVenueRequestDto request)
         {
             // Map DTO to Domain Model
@@ -39,22 +41,23 @@ namespace FestivalFusion.API.Controllers
             var response = new VenueDto
             {
                 VenueId = venue.VenueId,
-                Name = request.Name,
-                VenueImageUrl = request.VenueImageUrl,
-                Address = request.Address,
-                Capacity = request.Capacity
+                Name = venue.Name,
+                VenueImageUrl = venue.VenueImageUrl,
+                Address = venue.Address,
+                Capacity = venue.Capacity
             };
 
             return Ok(response);
         }
 
-        // GET: /api/venues
+        // GET: /api/venue
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> GetAllVenues()
         {
             var venues = await venueRepository.GetAllAsync();
 
-            //Convert Festival domain model to DTO
+            //Convert Venue domain model to DTO
             var response = new List<VenueDto>();
 
             foreach (var venue in venues)
@@ -72,8 +75,9 @@ namespace FestivalFusion.API.Controllers
             return Ok(response);
         }
 
-        // GET: https://localhost:7461/api/venues/{id}
+        // GET: https://localhost:7461/api/venue/{id}
         [HttpGet]
+        [Authorize]
         [Route("{id:int}")]
         public async Task<IActionResult> GetVenueById([FromRoute] int id)
         {
@@ -97,8 +101,9 @@ namespace FestivalFusion.API.Controllers
             return Ok(response);
         }
 
-        // PUT: https://localhost:7461/api/venues/{id}
+        // PUT: https://localhost:7461/api/venue/{id}
         [HttpPut]
+        [Authorize(Roles = "Editor,Moderator")]
         [Route("{id:int}")]
         public async Task<IActionResult> EditVenue([FromRoute] int id, UpdateVenueRequestDto request)
         {
@@ -132,8 +137,9 @@ namespace FestivalFusion.API.Controllers
             return Ok(response);
         }
 
-        // DELETE: https://localhost:7033/api/venues/{id}
+        // DELETE: https://localhost:7033/api/venue/{id}
         [HttpDelete]
+        [Authorize(Roles = "Editor")]
         [Route("{id:int}")]
         public async Task<IActionResult> RemoveVenue([FromRoute] int id)
         {

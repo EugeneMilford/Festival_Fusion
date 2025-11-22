@@ -1,7 +1,7 @@
-<app-navbar></app-navbar>
-<br>
+<app-navbar *ngIf="showLayout"></app-navbar>
+<br *ngIf="showLayout">
 
 <router-outlet></router-outlet>
-<br>
 
-<app-footer></app-footer>
+<br *ngIf="showLayout">
+<app-footer *ngIf="showLayout"></app-footer>

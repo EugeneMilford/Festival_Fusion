@@ -12,15 +12,16 @@ export class ContactService {
 
   constructor(private http: HttpClient) { }
 
+  // Anyone authenticated can post a contact message 
   addContact(model: AddContactRequest): Observable<void> {
-    return this.http.post<void>(`${environment.apiBaseUrl}/api/contact`, model);
+    return this.http.post<void>(`${environment.apiBaseUrl}/api/contact?addAuth=true`, model);
   }
 
   getAllContacts(): Observable<Contact[]> {
-    return this.http.get<Contact[]>(`${environment.apiBaseUrl}/api/contact`);
+    return this.http.get<Contact[]>(`${environment.apiBaseUrl}/api/contact?addAuth=true`);
   }
 
   deleteContact(id: string): Observable<Contact> {
-    return this.http.delete<Contact>(`${environment.apiBaseUrl}/api/contact/${id}`);
+    return this.http.delete<Contact>(`${environment.apiBaseUrl}/api/contact/${id}?addAuth=true`);
   }
 }
